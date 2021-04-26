@@ -1,10 +1,6 @@
 {
   "version": "0.0.1",
   "license": "MIT",
-  "author": {
-    "name": "Tigran Bayburtsyan",
-    "url": "https://tigran.tech"
-  },
   "scripts": {
     "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' --files src/index.ts",
     "build": "rm -rf build && tsc -p ."
@@ -14,7 +10,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
-    "typeorm": "^0.2.25",
+    "typeorm": "^0.2.32",
     "typescript-rest": "^3.0.1"
   },
   "devDependencies": {

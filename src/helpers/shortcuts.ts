@@ -1,10 +1,9 @@
 export const resOK = (data: any) => ({
-  error: false,
-  message: '',
-  ...data,
+  success: true,
+  data: data,
 });
 
 export const resError = (message: string) => ({
-  error: true,
-  message,
+  success: false,
+  message: message,
 });
