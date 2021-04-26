@@ -4,9 +4,9 @@ import {resOK} from '../helpers';
 @Path('/')
 class DefaultController {
     @GET
-    index(): {} {
+    async index(): Promise<any> {
         return resOK({
-            pidor: true
+            ok: 'ok'
         });
     }
 }

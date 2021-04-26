@@ -1,12 +1,12 @@
 import {Path, GET} from "typescript-rest";
 import {resOK} from '../helpers';
 
-@Path('/')
-class Health2 {
+@Path('/health')
+class Health {
     @GET
     index(): {} {
         return resOK({
-            pidor: true
+            status: true
         });
     }
 }

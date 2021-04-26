@@ -16,7 +16,6 @@ export const DBConnect = async () => {
     } else {
       await createConnection(ORMConfig);
     }
-    console.log("🌴 Database connection was successful!");
   } catch (e) {
     console.error('ERROR: Database connection failed!!', e);
     throw e;

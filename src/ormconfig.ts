@@ -11,7 +11,7 @@ export default {
     password: process.env.DB_PASSWORD || "revenue-service",
     database: process.env.DB_NAME || "revenue-service",
     synchronize: !process.env.DB_NO_SYNC,
-    logging: !process.env.DB_NO_LOGS,
+    logging: process.env.DB_NO_LOGS,
     autoReconnect: true,
     reconnectTries: Number.MAX_VALUE,
     reconnectInterval: 2000,
